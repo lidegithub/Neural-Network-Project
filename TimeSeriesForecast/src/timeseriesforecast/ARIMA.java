@@ -20,7 +20,7 @@ public class ARIMA {
         double [] output  = new double [input.length];
         /* Creating a RCaller */
         RCaller caller = new RCaller();
-        caller.setRscriptExecutable("/usr/bin/Rscript");
+        caller.setRscriptExecutable("/usr/local/bin/Rscript");
         /* Creating a source code */
         RCode code = new RCode();
         code.clear();

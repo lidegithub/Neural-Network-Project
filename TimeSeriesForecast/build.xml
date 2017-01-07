@@ -71,4 +71,5 @@
     nbproject/build-impl.xml file. 
 
     -->
+    <javac srcdir="src" destdir="bin" />
 </project>

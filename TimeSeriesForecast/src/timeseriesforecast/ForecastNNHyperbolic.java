@@ -26,7 +26,7 @@ public class ForecastNNHyperbolic {
         try {
             /* Creating a RCaller */
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
 
             /* Creating a source code */
             RCode code = new RCode();
@@ -70,7 +70,7 @@ public class ForecastNNHyperbolic {
         RMSE = tsnn.TrainingNN(1, results, 12, 12, 1, 0.25, 0.25, 500, 5);
         try {
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
             caller.cleanRCode();
             File file;
             int[] arr = new int[1];

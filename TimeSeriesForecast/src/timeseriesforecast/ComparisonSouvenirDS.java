@@ -58,7 +58,7 @@ public class ComparisonSouvenirDS {
         try {
             /* Creating a RCaller */
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
 
             /* Creating a source code */
             RCode code = new RCode();
@@ -106,7 +106,7 @@ public class ComparisonSouvenirDS {
         /*
          *         try {
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
             caller.cleanRCode();
             File file;
             String[] arr = new String[1];
@@ -142,7 +142,7 @@ public class ComparisonSouvenirDS {
         double[] RMSE = tsnn.TrainingNN(weightInitialization, trainingSet, testingSet, numOfInputUnit, numOfHiddenUnit, numOfOutputUnit,eta, alpha, maxEpoch, maxError);
         try {
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
             caller.cleanRCode();
             File file;
             String [] arr = new String[1];
@@ -177,7 +177,7 @@ public class ComparisonSouvenirDS {
         double[] RMSE = tsnn.TrainingNN(weightInitialization, trainingSet, testingSet, numOfInputUnit, numOfHiddenUnit, numOfOutputUnit,eta, alpha, maxEpoch, maxError);
         try {
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
             caller.cleanRCode();
             File file;
             String [] arr = new String[1];
@@ -214,7 +214,7 @@ public class ComparisonSouvenirDS {
         /*
          *try {
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
             caller.cleanRCode();
             File file;
             String [] arr = new String[1];

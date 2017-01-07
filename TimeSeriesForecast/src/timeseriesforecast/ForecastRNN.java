@@ -54,7 +54,7 @@ public class ForecastRNN {
         try {
             /* Creating a RCaller */
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
 
             /* Creating a source code */
             RCode code = new RCode();
@@ -105,7 +105,7 @@ public class ForecastRNN {
         double[] RMSE = tsnn.TrainingNN(weightInitialization, trainingSet, testingSet, numOfInputUnit, numOfHiddenUnit, numOfOutputUnit,eta, alpha, maxEpoch, maxError);
         try {
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
             caller.cleanRCode();
             File file;
             String [] arr = new String[1];

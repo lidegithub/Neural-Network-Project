@@ -36,7 +36,7 @@ public class RToJava {
              * Full path of the Rscript. Rscript is an executable file shipped with R.
              * It is something like C:\\Program File\\R\\bin.... in Windows
              */
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
 
             /*
              *  We are creating a random data from a normal distribution
@@ -128,7 +128,7 @@ public class RToJava {
     public void plotTest() {
         try {
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
             caller.cleanRCode();
 
             double[] numbers = new double[]{1, 4, 3, 5, 6, 10};
@@ -148,7 +148,7 @@ public class RToJava {
     public void readFromFile() {
         /* Creating a RCaller */
         RCaller caller = new RCaller();
-        caller.setRscriptExecutable("/usr/bin/Rscript");
+        caller.setRscriptExecutable("/usr/local/bin/Rscript");
 
         /* Creating a source code */
         RCode code = new RCode();
@@ -200,7 +200,7 @@ public class RToJava {
         try {
             /* Creating a RCaller */
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
 
             /* Creating a source code */
             RCode code = new RCode();
@@ -233,7 +233,7 @@ public class RToJava {
         try {
             /* Creating a RCaller */
             RCaller caller = new RCaller();
-            caller.setRscriptExecutable("/usr/bin/Rscript");
+            caller.setRscriptExecutable("/usr/local/bin/Rscript");
             caller.cleanRCode();
 
             /* Creating a source code */

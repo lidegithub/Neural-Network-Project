@@ -313,7 +313,7 @@ public class TimeSeriesNN {
 
     public void setMinMax(double[] dataSet) {
         RCaller caller = new RCaller();
-        caller.setRscriptExecutable("/usr/bin/Rscript");
+        caller.setRscriptExecutable("/usr/local/bin/Rscript");
 
         RCode code = new RCode();
         code.clear();
